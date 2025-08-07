@@ -1,0 +1,190 @@
+<!DOCTYPE html><html lang="ja"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="NES.css is a NES-style CSS Framework.">
+    <meta name="keywords" content="html5,css,framework,sass,NES,8bit">
+    <meta name="author" content="© 2018 B.C.Rikko">
+    <meta name="theme-color" content="#212529">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" href="images/android-chrome-512x512.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <title>Gabriel Carneiro</title>
+
+    <link href="css/nes.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/vue.min.js"></script>
+
+    <script src="js/dialog-polyfill.js"></script>
+    <script src="js/highlight.js"></script>
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="NES.css">
+    <meta property="og:url" content="https://nostalgic-css.github.io/NES.css/">
+    <meta property="og:description" content="NES-style CSS Framework | ファミコン風CSSフレームワーク">
+    <meta property="og:image" content="images/49061716-da649680-f254-11e8-9a89-d95a7407ec6a.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@bc_rikko">
+    <meta name="twitter:creator" content="@bc_rikko">
+    <meta name="twitter:image" content="https://user-images.githubusercontent.com/5305599/49061716-da649680-f254-11e8-9a89-d95a7407ec6a.png">
+
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-41640153-4"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js", new Date());gtag("config", "UA-41640153-4");</script>
+    <script>
+      if (window.navigator.userAgent.toLocaleLowerCase().indexOf('trident') !== -1) {
+        window.alert('IE is not supported on this page.')
+      }
+
+    </script>
+  </head>
+
+  <body>
+    <div id="nescss">
+      <header :class="{ sticky: scrollPos > 50 }">
+        <div class="container">
+          <div class="nav-brand">
+            <a href="index.html">
+              <h1><i class="snes-jp-logo brand-logo"></i>Gabriel Carneiro</h1>
+            </a>
+            <p>Desenvolvedor Front-End Júnior</p>
+          </div>
+
+          <div class="social-buttons">
+            <p>SIGA ME</p>
+            <div class="share">
+              <a href="https://api.whatsapp.com/send?phone=5516997748031" target="_blank">
+              <i class="nes-icon whatsapp"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/gabrieldemelloesilvacarneiro/" target="_blank"><i class="nes-icon linkedin"></i></a>
+              <a href="https://github.com/gabrieldemello" target="_blank"><i class="nes-icon github"></i></a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="container">
+        <main class="main-content">
+          <a class="github-link" :class="{ active:  scrollPos < 200 }" href="" rel="noopener" @mouseover="startAnimate" @mouseout="stopAnimate">
+            <p class="nes-balloon from-right">Contrater-me<br>Por favor</p>
+            <img src="images/life.png">
+          </a>
+
+          <!-- About -->
+          <section class="topic">
+            <h2 id="about"><a href="#about">#</a>Sobre mim</h2>
+            <p>Desenvolvedor Front-end especializado em criar experiências digitais rápidas, escaláveis e com foco em performance. Tenho sólida experiência em grandes projetos, utilizando tecnologias modernas como React.js, Next.js, TypeScript, Redux, Styled Components, Material UI e Tailwind CSS. Sou apaixonado pelo desenvolvimento de componentes reutilizáveis, Design Systems, animações fluidas e por evoluir continuamente a performance e a acessibilidade das aplicações.</p>
+          </section>
+          <!-- <section class="topic">
+            <h2 id="members"><a href="#members">#</a>Academico</h2>
+          </section>-->
+
+          <div class="nes-container with-title">
+<h3 class="title"><a href="#members">#</a> Experiência</h3>
+<div class="item">
+<p>Desenvolvedor Front End</p>
+<p>Formado em Análise e Desenvolvimento de Sistemas</p>
+<p>Experiência com Vue.js, Node.js, AWS e Python</p>
+</div>
+</div>
+
+<p></p>
+
+<div class="nes-container with-title">
+<h3 class="title"><a href="#members">#</a> Educacão</h3>
+<div class="item">
+<div class="lists">
+  <ul class="nes-list is-disc">
+    <li>Tecnológico em Web Design</li>
+    Uniara / Universidade de Araraquara</li>
+    <br><br>
+    <li>Técnico em Informática</li>
+    Microcamp / Araraquara
+</ul>
+</div>
+</div>
+</div>
+
+<p></p>
+
+<div class="nes-container with-title">
+<h3 class="title"><a href="#members">#</a> Cursos e Certificacões</h3>
+<div class="item">
+<div class="lists">
+  <ul class="nes-list is-disc">
+    <li>Mendix</li>
+    Uniara / Universidade de Araraquara</li>
+    <br><br>
+    <li>TECHDOJO</li>
+    Desennvolvimento Web</li>
+</ul>
+</div>
+</div>
+</div>
+
+<p></p>
+<div class="nes-container with-title">
+<h3 class="title"><a href="#members">#</a> HABILIDADES</h3>
+<div class="item">
+<button class="nes-btn">HTML</button>
+<button type="button" class="nes-btn is-primary">CSS</button>
+<button type="button" class="nes-btn is-success">VUE.JS</button>
+<button type="button" class="nes-btn is-warning">NODE.JS</button>
+<button type="button" class="nes-btn">TAILWIND</button>
+<button type="button" class="nes-btn is-success">JAVASCRIPT</button>
+<button type="button" class="nes-btn is-error">PHOTOSHOP</button>
+<button type="button" class="nes-btn is-warning">UX/UI Design</button>
+</div>
+</div>
+
+<p></p>
+<div class="nes-container with-title">
+<h3 class="title"><a href="#members">#</a> CSS BATTLE</h3>
+<div class="item">
+<p>CSS Battle é um jogo online divertido e desafiador onde você pratica CSS (Cascading Style Sheets) resolvendo desafios visuais. A ideia principal é reproduzir uma imagem-alvo usando o menor código CSS e HTML possível. <br>É como um jogo de lógica para quem gosta de programação front-end.</p> 
+<p>⚔️ Tem rivais ou modo competitivo?</p>
+<p>Sim! O modo “Battle” permite:</p>
+<div class="lists">
+  <ul class="nes-list is-disc">
+    <li>Jogar desafios públicos.</li>
+    <br><br>
+    <li>Ver o ranking em tempo real (quem fez com menos código).</li>
+    <br><br>
+    <li>Subir no placar contra outros programadores do mundo inteiro.</li>
+    <br><br>
+    <li>Alguns jogadores criam rivalidades amigáveis e desafios entre amigos.</li>
+    <br><br>
+</ul>
+</div>
+<i class="nes-icon trophy is-medium"></i>
+<a href="https://cssbattle.dev/player/gabrielcabrito" target="_blank" button type="button" class="nes-btn is-warning">CSS BATTLE</button></a>
+</div>
+</div>
+        
+</main>
+
+<footer>
+<span>2025</span>
+<span>Desenvolvedor Front-End</span>
+<span>-</span>
+<span>Gabriel Carneiro</span>
+</footer>
+<!-- FAB Button -->
+        <button type="button" class="nes-btn is-error scroll-btn" :class="{ active: scrollPos > 500 }" @click="window.scrollTo({ top:0, behavior: 'smooth' })"><span><</span></button>
+      </div>
+    </div>
+  
+  <script src="js/script.js"></script>
+  <script>
+    const h = document.querySelector('head');
+    ['./lib/dialog-polyfill.css', './lib/highlight-theme.css'].forEach(a => {
+      const l = document.createElement('link');
+      l.href = a;
+      l.rel = 'stylesheet';
+      h.appendChild(l);
+    })
+  </script>
+</body>
+</html>
